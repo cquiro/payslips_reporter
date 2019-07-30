@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'versionist', '~> 2.0.1'
 gem 'active_model_serializers', '~> 0.10.10'
+gem 'interactor'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -22,6 +23,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 5.0.2'
   gem 'rubocop', '~> 0.73.0'
   gem 'rubocop-rspec', '~> 1.34.0'
+  gem 'faker', '~> 1.9.6'
 end
 
 group :test do
