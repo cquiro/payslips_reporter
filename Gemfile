@@ -28,6 +28,7 @@ group :test do
   gem 'database_cleaner', '~> 1.7.0'
   gem 'rspec-mocks', '~> 3.8.1'
   gem 'rspec-rails', '~> 3.8.2'
+  gem 'shoulda-matchers', '~> 4.1.1'
 end
 
 group :development do
