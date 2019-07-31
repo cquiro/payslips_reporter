@@ -15,7 +15,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'versionist', '~> 2.0.1'
 gem 'active_model_serializers', '~> 0.10.10'
-gem 'interactor'
+gem 'interactor', '~> 3.1.1'
+gem 'httparty', '~> 0.17.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
