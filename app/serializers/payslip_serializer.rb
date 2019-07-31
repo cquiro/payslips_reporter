@@ -10,4 +10,3 @@ class PayslipSerializer < ActiveModel::Serializer
     object.date.strftime('%Y%m%d')
   end
 end
-

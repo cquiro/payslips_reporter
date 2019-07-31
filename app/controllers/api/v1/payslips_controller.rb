@@ -2,9 +2,13 @@ module Api
   module V1
     class PayslipsController < ApplicationController
       def index
-        payslips = Report.find_by(filename: "payslips.#{params[:year]}#{params[:month]}.txt")
-                         .payslips
-        render json: payslips, each_serializer: PayslipSerializer, status: :ok
+        result = Payslips::Retrieve.call(year: params[:year], month: params[:month])
+
+        if result.success?
+          render json: result.payslips, each_serializer: PayslipSerializer, status: :ok
+        else
+          head :not_found
+        end
       end
     end
   end
